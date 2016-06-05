@@ -1,10 +1,11 @@
 using System.Data.Entity;
 using Honduteck.Models;
+using Honduteck._1._1_Domain.Repositories.Generic;
 using Honduteck._1._2_Infraestructure.Mapping;
 
 namespace Honduteck._1._2_Infraestructure
 {
-    public partial class HonduteckUnitofWork : DbContext
+    public partial class HonduteckUnitofWork : DbContext, IUnitofWork
     {
         static HonduteckUnitofWork()
         {

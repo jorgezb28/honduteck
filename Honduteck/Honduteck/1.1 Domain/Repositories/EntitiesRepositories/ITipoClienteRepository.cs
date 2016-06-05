@@ -10,6 +10,5 @@ namespace Honduteck._1._1_Domain.Repositories
 {
     public interface ITipoClienteRepository: IRepository<TipoCliente>
     {
-
     }
 }

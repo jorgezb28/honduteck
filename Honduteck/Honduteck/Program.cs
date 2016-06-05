@@ -20,7 +20,7 @@ namespace Honduteck
             var container = BuildUnityContainer();
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Form1());
+            Application.Run(container.Resolve<FormTipoClientes>());
         }
 
         private static IUnityContainer BuildUnityContainer()

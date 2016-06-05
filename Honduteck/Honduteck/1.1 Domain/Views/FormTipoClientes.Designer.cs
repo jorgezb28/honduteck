@@ -1,6 +1,6 @@
 ﻿namespace Honduteck
 {
-    partial class Form1
+    partial class FormTipoClientes
     {
         /// <summary>
         /// Required designer variable.
@@ -28,21 +28,35 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.button1 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
-            // Form1
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(137, 128);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(151, 54);
+            this.button1.TabIndex = 0;
+            this.button1.Text = "Test";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // FormTipoClientes
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(181)))), ((int)(((byte)(196)))));
             this.ClientSize = new System.Drawing.Size(424, 344);
-            this.Name = "Form1";
+            this.Controls.Add(this.button1);
+            this.Name = "FormTipoClientes";
             this.Text = "Maestro de Lugares";
             this.ResumeLayout(false);
 
         }
 
         #endregion
+
+        private System.Windows.Forms.Button button1;
     }
 }
 

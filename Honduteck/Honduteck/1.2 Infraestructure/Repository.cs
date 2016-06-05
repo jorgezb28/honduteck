@@ -66,6 +66,9 @@ namespace Honduteck._1._2_Infraestructure
             return GetSet().FirstOrDefault(filter);
         }
 
-       
+        public override string ToString()
+        {
+            return "MyRepository with type : " + typeof(TEntity).Name;
+        }
     }
 }
